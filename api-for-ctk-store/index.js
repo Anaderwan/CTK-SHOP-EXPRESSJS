@@ -312,7 +312,7 @@ app.put("/items/:id", async (req, res) => {
 });
 
 //---------------------------------------------------------------------------------------------- PUT
-//-------------DELETE STORES
+//-------------PUT STORES
 app.delete("/stores/:id", async (req, res) => {
   const id = req.params.id;
 
@@ -334,7 +334,7 @@ app.delete("/stores/:id", async (req, res) => {
     res.status(400).json({ error: err.message });
   }
 });
-//-------------DELETE ITEMS
+
 app.delete("/items/:id", async (req, res) => {
   const id = req.params.id;
 
